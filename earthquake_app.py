@@ -1,3 +1,8 @@
+# !/usr/bin/env python
+# -*- coding: utf-8 -*-
+"""An earthquake dashboard"""
+
+# Python code for an interactive streamlit and plotly dashboard
 import streamlit as st
 import pandas as pd
 import plotly.express as px
