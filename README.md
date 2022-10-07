@@ -8,9 +8,7 @@ It provides information and maps on magnitudes, deaths, and damages.
 
 
 ## App
-You can directly open the app via the following link:
-
-[![Streamlit App](https://milenalang-earthquake-dash-earthquake-app-plkeb7.streamlitapp.com/)
+Click [here](https://milenalang-earthquake-dash-earthquake-app-plkeb7.streamlitapp.com/) to go directly to the app. 
 
 ## Getting started 
 
@@ -23,7 +21,6 @@ If you want to run the app locally, follow the instructions below.
   - plotly
   - statsmodels
   - streamlit
-  - 
 - any operating system, e.g. Windows 10
 
 ### Installing
