@@ -8,7 +8,6 @@ import pandas as pd
 import plotly.express as px
 import statsmodels.api as sm
 import plotly.graph_objs as go
-import os
 from PIL import Image
 from utils import set_sidebar, read_data
 
