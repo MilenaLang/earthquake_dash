@@ -18,46 +18,40 @@ st.set_page_config(
     layout = "wide"
 )
 
-
 def main():
     """
     This function provide a dashboard for all earthquakes occurring from 1800 to 2021.
     :return: interactive dashboard
     """
-
-    # add title
-    st.title("Dashboard")
-
     # call sidebar
     set_sidebar()
 
     # get data
     data = read_data()
 
+    # add title and overview map
+    st.title("Dashboard")
     st.subheader("Earthquakes from 1800-2021")
     st.map(data)
 
-    # give information
+    # give the user the opportunity to have a look at the raw data
     st.write("Have a look at the raw dataset, if you want...")
-
-    # give the user the opportunity to have a look at the data
     if st.checkbox("Show data..."):
         st.subheader("Raw data")
         # show data
-        st.write(data)
+        data
 
     st.write("Data retrieved from: https://www.kaggle.com/datasets/ramjasmaurya/historical-data-of-earthquakes18002021")
 
-
     st.markdown("---")
-
 
     ### ROW 1 ####
 
+    # create three columns
     left_col, middle_col, right_col = st.columns(3)
 
     with left_col:
-        #a average magnitude
+        # average magnitude
         data["Mag"] = pd.to_numeric(data["Mag"])
         magnitude = data["Mag"]
         mean_mag = magnitude.mean()
@@ -78,9 +72,7 @@ def main():
         st.subheader("Ø Deaths/Earthquake:")
         st.subheader(f"{mean_deaths:.2f}")
 
-
     st.markdown("---")
-
 
     ### ROW 2 ###
 
@@ -91,13 +83,12 @@ def main():
     with left_col2:
         # display top 10 highest magnitudes
         top_mag = data.nlargest(10, 'Mag')
-
         fig = px.bar(
             top_mag,
             y='Location Name',
             x='Mag',
             orientation='h',
-            color_discrete_sequence =['blue']*len(data),
+            color_discrete_sequence =['blue'],
             title="Locations of the strongest earthquakes"
         )
         fig.update_xaxes(range=(6, 10))
@@ -113,9 +104,7 @@ def main():
         )
         st.plotly_chart(fig, use_container_width=True)
 
-
     st.markdown("---")
-
 
     ### ROW 3 ###
 
@@ -124,7 +113,6 @@ def main():
     left_col3, right_col3 = st.columns(2)
 
     with left_col3:
-
         # plot (only) deathly earthquakes
         # selected data must not be zero
         Deaths_noNa = data[data['Deaths'].notna()]
@@ -171,10 +159,7 @@ def main():
         )
         st.plotly_chart(fig, use_container_width=True)
 
-
-
     st.markdown("---")
-
 
     ### ROW 4 ###
 
@@ -183,7 +168,6 @@ def main():
     left_col4, right_col4 = st.columns(2)
 
     with left_col4:
-
         # plot (only) earthquakes with damages
         # selected data must not be zero
         damage_noNa = data[data['Damage ($Mil)'].notna()]
@@ -201,7 +185,6 @@ def main():
         st.plotly_chart(fig12, use_container_width=True)
 
     with right_col4:
-
         # plot a bar of the 10 earthquakes with the most damage
         fig = px.scatter(damage_noNa,
                          y='Damage ($Mil)',
@@ -214,16 +197,14 @@ def main():
 
         st.plotly_chart(fig, use_container_width=True)
 
-
     st.markdown("---")
 
-    
     st.subheader("Interactive Historic Evolution")
 
     # selection of y-value
     y_axis_val = st.selectbox('Select y-axis value:', options=data.columns, index=11)
 
-    # colourpicker
+    # color picker
     col = st.color_picker('Select a colour:')
 
     # plot
@@ -231,8 +212,6 @@ def main():
     plot.update_traces(marker=dict(color=col))
     plot.update_layout(plot_bgcolor="rgba(0, 0, 0, 0)")
     st.plotly_chart(plot)
-
-
 
 
 if __name__ == "__main__":

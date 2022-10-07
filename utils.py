@@ -8,7 +8,6 @@ import streamlit as st
 from PIL import Image
 import pandas as pd
 
-
 def set_sidebar():
     """
     This function creates a sidebar with some explanatory and additional information
@@ -35,7 +34,6 @@ def set_sidebar():
                 This app is developed by Milena Lang (last updated 10.10.2022).
                 """
             )
-
 
 def read_data():
     """
