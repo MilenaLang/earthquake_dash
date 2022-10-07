@@ -42,8 +42,8 @@ def read_data():
     :return: data pandas DF
     """
     try:
-        data = pd.read_csv(
-            "/Users/milenalang/Documents/Studium/Master/advanced_geoscripting/earthquake_dash/data/earthquakes1800_2021.csv")
+        url = "data/earthquakes1800_2021.csv"
+        data = pd.read_csv(url)
         # rename the columns for streamlit and delete the ones missing coordinates
         data.rename(columns={'Latitude': 'latitude', 'Longitude': 'longitude'}, inplace=True)
         data = data[data['longitude'].notna()]

@@ -1,21 +1,37 @@
-# 📦 Streamlit App Starter Kit 
+# 📦 Earthquake Dashboard (1800-2021)
 ```
-⬆️ (Replace above with your app's name)
+Developed by Milena Lang.
 ```
 
-Description of the app ...
+This Streamlit earthquake dashboard is designed to analyze and visualize all earthquakes occurring worldwide from 1800 to 2021.
+It provides information and maps on magnitudes, deaths, and damages.
+
 
 ## Demo App
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://starter-kit.streamlitapp.com/)
 
-## Section Heading
+## Getting started 
 
-This is filler text, please replace this with text for this section.
+If you want to run the app locally, follow the instructions below.
 
-## Further Reading
+### Dependencies
+- Python 3.9 or higher
+- Python libraries:
+  - pandas==1.4.3
+  - Pillow==9.2.0
+  - plotly==5.9.0
+  - statsmodels==0.13.2
+  - streamlit==1.13.0
+- any operating system, e.g. Windows 10
 
-This is filler text, please replace this with a explanatory text about further relevant resources for this repo
-- Resource 1
-- Resource 2
-- Resource 3
+### Installing
+- clone the repository
+- no modifications needed
+
+### Executing programm
+1. Call the earthuake_app.py file from the respective folder in your command line with:
+
+  
+    ``` streamlit run earthquake_app.py ``
+2. Watch the app to open in your browser-
