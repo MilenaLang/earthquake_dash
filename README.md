@@ -40,7 +40,7 @@ streamlit run earthquake_app.py
 
 ### Resources 
 - Andy McDonald(2022): Adding Interactive Plotly Charts to a Streamlit App (Online at: https://www.youtube.com/watch?v=3f-j-PZ5N8A, retrieved September 30, 2022).
-- Bradford, W. (2011): Reaching the Visual Learner: Teaching Property Through Art. In Social Sci-ence Research Network (2011): n. pag.
+- Bradford, W. (2011): Reaching the Visual Learner: Teaching Property Through Art. In Social Science Research Network (2011): n. pag.
 - Coding is fun(2022): How to create a Streamlit Multi-Page Web App (Online at: https://www.youtube.com/watch?v=YClmpnpszq8, retrieved September 30, 2022).
 - Dataprofessor(2022): Streamlit App Starter Kit (Online at: https://github.com/streamlit/app-starter-kit, retrieved September 30, 2022).
 - Kilcommins, S. (2021): Streamlit – Everything You Need To Know (Online at: https://medium.datadriveninvestor.com/streamlit-everything-you-need-to-know-665eb90fcf4a#a7fe, retrieved October 5, 2022).
