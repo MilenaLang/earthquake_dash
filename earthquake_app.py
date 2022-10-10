@@ -88,7 +88,7 @@ def main():
             x='Mag',
             orientation='h',
             color_discrete_sequence =['blue'],
-            title="Locations of the strongest earthquakes"
+            title="Locations of the Strongest Earthquakes"
         )
         fig.update_xaxes(range=(6, 10))
         fig.update_layout(yaxis={'categoryorder':'total ascending'})
@@ -99,7 +99,7 @@ def main():
         fig = px.histogram(data,
                            x="Mag",
                            nbins=50,
-                           title="Magnitude of all earthquakes"
+                           title="Magnitude of all Earthquakes"
         )
         st.plotly_chart(fig, use_container_width=True)
 
@@ -123,7 +123,7 @@ def main():
                                   color_continuous_scale=px.colors.sequential.Plotly3,
                                   size_max=15,
                                   zoom=0.2,
-                                  title="Deadly earthquakes"
+                                  title="Deadly Earthquakes"
         )
         fig12.update_layout(mapbox_style="carto-positron")
         st.plotly_chart(fig12, use_container_width=True)
@@ -178,7 +178,7 @@ def main():
                                   color_continuous_scale=px.colors.cyclical.IceFire,
                                   size_max=15,
                                   zoom=0.2,
-                                  title="Earthquakes with damages"
+                                  title="Earthquakes with Damages"
                                   )
         fig12.update_layout(mapbox_style="carto-positron")
         st.plotly_chart(fig12, use_container_width=True)
@@ -189,7 +189,7 @@ def main():
                          y='Damage ($Mil)',
                          x='Houses Destroyed',
                          trendline="ols",
-                         title="Correlation of damage and destroyed houses",
+                         title="Correlation of Damage and Destroyed Houses",
                          color="Deaths",
                          color_continuous_scale=px.colors.cyclical.IceFire
         )

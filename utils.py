@@ -24,9 +24,9 @@ def set_sidebar():
 
         # add earthqauke image
         image = Image.open('data/erdbeben.jpg')
-        st.image(image, caption="Earthquake in Taiwan (derived from"
+        st.image(image, caption="Earthquake in Taiwan (Online at:"
                                         " https://rp-online.de/panorama/ausland/taiwan-erdbeben-"
-                                        "der-staerke-6-4-reisst-menschen-aus-dem-schlaf_bid-18908485)")
+                                        "der-staerke-6-4-reisst-menschen-aus-dem-schlaf_bid-18908485, retrieved October 2, 2022)")
 
         # add developer information
         st.info(
