@@ -1,4 +1,4 @@
-# 📦 Earthquake Dashboard (1800-2021)
+# Earthquake Dashboard (1800-2021)
 ```
 Developed by Milena Lang.
 ```
@@ -35,11 +35,14 @@ streamlit run earthquake_app.py
 ```
 2. Watch the app to open in your browser.
 
+### Data
+- Historical Data of Earthquakes (1800-2021) (Online at: https://www.kaggle.com/datasets/ramjasmaurya/historical-data-of-earthquakes18002021, retrieved September 28, 2022).
+
 ### Resources 
-- Andy McDonald(2022): Adding Interactive Plotly Charts to a Streamlit App (Online at: https://www.youtube.com/watch?v=3f-j-PZ5N8A, retrieved 30.09.2022).
+- Andy McDonald(2022): Adding Interactive Plotly Charts to a Streamlit App (Online at: https://www.youtube.com/watch?v=3f-j-PZ5N8A, retrieved September 30, 2022).
 - Bradford, W. (2011): Reaching the Visual Learner: Teaching Property Through Art. In Social Sci-ence Research Network (2011): n. pag.
-- Coding is fun(2022): How to create a Streamlit Multi-Page Web App (Online at: https://www.youtube.com/watch?v=YClmpnpszq8, retrieved 30.09.2022).
-- Dataprofessor(2022): Streamlit App Starter Kit (Online at: https://github.com/streamlit/app-starter-kit, retrieved 30.09.2022).
+- Coding is fun(2022): How to create a Streamlit Multi-Page Web App (Online at: https://www.youtube.com/watch?v=YClmpnpszq8, retrieved September 30, 2022).
+- Dataprofessor(2022): Streamlit App Starter Kit (Online at: https://github.com/streamlit/app-starter-kit, retrieved September 30, 2022).
 - Kilcommins, S. (2021): Streamlit – Everything You Need To Know (Online at: https://medium.datadriveninvestor.com/streamlit-everything-you-need-to-know-665eb90fcf4a#a7fe, retrieved October 5, 2022).
 - Plotly (2022): Dash Enterprise – The Premier Data App Platform for Python (Online at https://plotly.com/dash/, retrieved September 30, 2022).
 - Python Software Foundation(2022): Project description – pydeck: Large-scale interactive data visualization in Python (Online at https://pypi.org/project/pydeck/, retrieved October 1, 2022).
